@@ -1,0 +1,24 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "pygomo"
+dynamic = ["version"]
+description = "Lightweight framework for game development."
+authors = [
+    {name = "Luxcih", email = "luxcih.me@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+
+[tool.pdm]
+distribution = true
+build = {run-setuptools = true}
+
+[tool.pdm.version]
+source = "scm"
+write_to = "pygomo/_version.py"
+write_template = "version = '{}'"
