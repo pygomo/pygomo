@@ -6,3 +6,7 @@
 	path = extern/glew
 	url = https://github.com/Perlmint/glew-cmake.git
 	branch = master
+[submodule "glfw"]
+	path = extern/glfw
+	url = https://github.com/glfw/glfw.git
+	branch = 3.3-stable
