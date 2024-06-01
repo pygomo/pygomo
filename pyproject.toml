@@ -16,7 +16,10 @@ license = {file = "LICENSE.txt"}
 
 [tool.pdm]
 distribution = true
-build = {run-setuptools = true}
+
+[tool.pdm.build]
+run-setuptools = true
+source-includes = ["CMakeLists.txt", "setup.py", "extern/"]
 
 [tool.pdm.version]
 source = "scm"
