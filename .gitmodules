@@ -9,4 +9,4 @@
 [submodule "glfw"]
 	path = extern/glfw
 	url = https://github.com/glfw/glfw.git
-	branch = 3.3-stable
+	branch = latest
